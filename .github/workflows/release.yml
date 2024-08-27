@@ -21,7 +21,7 @@ jobs:
       - name: "Build"
         run: |
           latexmk -pdf main.tex
-          mv "main.pdf" "UFSIT Constitution.pdf"
+          mv "main.pdf" "UFSIT_Constitution.pdf"
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
