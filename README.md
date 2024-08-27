@@ -6,3 +6,6 @@ We put it here in case students decide they believe a change to the constitution
 
 Note that, as a USSO (University Sponsored Student Organization), all changes must comply with the [constitution requirements](https://uflorida-my.sharepoint.com/personal/drausal_andrea_ufl_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdrausal%5Fandrea%5Fufl%5Fedu%2FDocuments%2FConstitution%20Requirements%202024%2D25&ga=1).
 
+### TODO:
+
+- [ ] Add automatic conversion to docx in pipeline 
