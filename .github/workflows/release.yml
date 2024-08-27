@@ -16,7 +16,7 @@ jobs:
 
       - name: "Install dependencies"
         run: |
-          sudo apt install latexmk
+          sudo apt install latexmk texlive-latex-base texlive-latex-extra texlive-latex-recommended
 
       - name: "Build"
         run: |
