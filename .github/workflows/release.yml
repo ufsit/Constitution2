@@ -16,12 +16,14 @@ jobs:
 
       - name: "Install dependencies"
         run: |
-          sudo apt install latexmk texlive-latex-base texlive-latex-extra texlive-latex-recommended
+          sudo apt install latexmk texlive-latex-base texlive-latex-extra texlive-latex-recommended pipx
+          pipx install pdf2docx
 
       - name: "Build"
         run: |
           latexmk -pdf main.tex
           mv "main.pdf" "UFSIT_Constitution.pdf"
+          ~/.local/bin/pdf2docx convert "UFSIT_Constitution.pdf"
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
@@ -31,3 +33,4 @@ jobs:
           title: "Latest Build"
           files: |
             *.pdf
+            *.docx
