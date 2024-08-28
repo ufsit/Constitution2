@@ -23,7 +23,7 @@ jobs:
         run: |
           latexmk -pdf main.tex
           mv "main.pdf" "UFSIT_Constitution.pdf"
-          ~/.local/bin/pdf2docx convert "UFSIT_Constitution.pdf"
+          pdf2docx convert "UFSIT_Constitution.pdf"
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
