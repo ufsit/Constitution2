@@ -16,12 +16,12 @@ jobs:
 
       - name: "Install dependencies"
         run: |
+          sudo apt-get update
           sudo apt install latexmk texlive-latex-base texlive-latex-extra texlive-latex-recommended pipx
           pipx install pdf2docx
 
       - name: "Build"
         run: |
-          apt-get update
           latexmk -pdf main.tex
           mv "main.pdf" "UFSIT_Constitution.pdf"
           pdf2docx convert "UFSIT_Constitution.pdf"
