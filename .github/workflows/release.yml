@@ -21,6 +21,7 @@ jobs:
 
       - name: "Build"
         run: |
+          apt-get update
           latexmk -pdf main.tex
           mv "main.pdf" "UFSIT_Constitution.pdf"
           pdf2docx convert "UFSIT_Constitution.pdf"
